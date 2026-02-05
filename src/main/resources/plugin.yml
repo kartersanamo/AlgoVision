@@ -1,0 +1,69 @@
+name: AlgoVision
+version: 1.0.0
+main: com.kartersanamo.algoVision.AlgoVision
+api-version: '1.20'
+author: Karter Sanamo
+description: Visualize computer science algorithms in Minecraft
+website: https://github.com/kartersanamo/AlgoVision
+
+commands:
+  algo:
+    description: Main AlgoVision command
+    usage: /algo <subcommand>
+    aliases: [av, algoviz]
+
+permissions:
+  algovision.*:
+    description: All AlgoVision permissions
+    default: op
+    children:
+      algovision.help: true
+      algovision.wand: true
+      algovision.region: true
+      algovision.settings: true
+      algovision.settings.global: true
+      algovision.visualize: true
+      algovision.control: true
+      algovision.preset: true
+      algovision.data: true
+      algovision.stats: true
+
+  algovision.help:
+    description: View help information
+    default: true
+
+  algovision.wand:
+    description: Get the region selection wand
+    default: op
+
+  algovision.region:
+    description: Manage visualization regions
+    default: op
+
+  algovision.settings:
+    description: Change personal visualization settings
+    default: op
+
+  algovision.settings.global:
+    description: Change global visualization settings
+    default: op
+
+  algovision.visualize:
+    description: Start algorithm visualizations
+    default: op
+
+  algovision.control:
+    description: Control running visualizations
+    default: op
+
+  algovision.preset:
+    description: Manage visualization presets
+    default: op
+
+  algovision.data:
+    description: Manage visualization input data
+    default: op
+
+  algovision.stats:
+    description: View algorithm statistics
+    default: op

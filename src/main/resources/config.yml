@@ -1,0 +1,43 @@
+# AlgoVision Configuration
+
+# Default Visualization Settings
+settings:
+  speed: 10
+  delay: 20
+  highlightColor: YELLOW_CONCRETE
+  swapColor: RED_CONCRETE
+  sortedColor: GREEN_CONCRETE
+  compareColor: GOLD_BLOCK
+  pauseOnComparison: false
+  pauseOnSwap: false
+  showStats: true
+  autoReset: true
+  soundEffects: true
+  particleEffects: true
+  displayMode: HEIGHT
+  baseBlock: STONE
+  minHeight: 1
+  maxHeight: 64
+
+# Region Limits
+region:
+  minWidth: 5
+  minHeight: 3
+  minLength: 5
+  maxWidth: 100
+  maxHeight: 256
+  maxLength: 100
+  maxVolume: 100000
+
+# Performance
+performance:
+  maxConcurrentVisualizations: 5
+  cleanupIntervalTicks: 6000
+
+# Data Generation
+data:
+  defaultSize: 30
+  maxSize: 100
+  randomRange:
+    min: 1
+    max: 100
